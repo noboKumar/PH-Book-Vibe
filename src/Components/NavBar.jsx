@@ -1,17 +1,18 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const NavBar = () => {
   const navLinks = (
     <>
-      <li className="mx-2">
-        <button className="btn">Home</button>
-      </li>
-      <li className="mx-2">
-        <button className="btn">Listed Books</button>
-      </li>
-      <li className="mx-2">
-        <button className="btn">Pages to Read</button>
-      </li>
+      <NavLink to="/">
+        <li className="mx-2">Home</li>
+      </NavLink>
+      <NavLink to="/listedBook">
+        <li className="mx-2">Listed Books</li>
+      </NavLink>
+      <NavLink to="/pagesToRead">
+        <li className="mx-2">Pages to Read</li>
+      </NavLink>
     </>
   );
   return (
@@ -45,12 +46,12 @@ const NavBar = () => {
         <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        <ul className="menu menu-horizontal px-1 items-center">{navLinks}</ul>
       </div>
       <div className="navbar-end">
         <div className="space-x-4">
-          <a className="btn bg-primary text-white">Sign In</a>
-          <a className="btn border-2 border-accent">Sign Up</a>
+          <a className="btn bg-[#23BE0A] text-white">Sign In</a>
+          <a className="btn bg-[#59C6D2] text-white">Sign Up</a>
         </div>
       </div>
     </div>

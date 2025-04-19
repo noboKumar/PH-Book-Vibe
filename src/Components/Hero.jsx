@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 className="text-5xl/relaxed font-bold">
             Books to freshen up <br /> your bookshelf
           </h1>
-          <button className="btn btn-primary my-5">Get Started</button>
+          <button className="btn bg-[#23BE0A] text-white py-6 my-5">View The List</button>
         </div>
         <img
           src={HeroImg}

@@ -1,7 +1,9 @@
+import Root from "./Routers/Root";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl">Hello</h1>
+      <h1>App</h1>
     </>
   );
 }

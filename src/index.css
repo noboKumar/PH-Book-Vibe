@@ -5,3 +5,9 @@
 .playfair-font {
   font-family: "Playfair Display", serif;
 }
+.active {
+  border: 2px solid #23BE0A;
+  border-radius: 5px;
+  padding: 8px 5px 8px 5px;
+  color: #23BE0A;
+}
